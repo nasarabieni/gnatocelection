@@ -1,0 +1,80 @@
+.result-card {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #ececf3;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 51, 102, 0.08);
+  transition: box-shadow 0.3s ease;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-card:hover {
+  box-shadow: 0 6px 28px rgba(0, 51, 102, 0.12);
+}
+
+.result-card h3 {
+  color: rgba(2, 3, 66, 0.8);
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #d2d1d1;
+}
+
+.result-card p {
+  margin: 8px 0;
+  color: #444444;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.result-card strong {
+  color: #003366;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 85px;
+}
+
+.success-message {
+  color: rgb(94, 94, 94);
+  margin: 15px 0;
+  padding: 6px 6px;
+  background-color: rgba(71, 245, 119, 0.3);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.error-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5d2d8;
+  border-color: #f5d2d8;
+}
+
+.error-card p {
+  color: #cc0000;
+  font-size: 16px;
+}
+
+.thank-you {
+  color: #0033cc;
+  font-weight: 600;
+  margin-top: 12px;
+  text-align: center;
+}
