@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: gnatocelections
+    env: static
+    buildCommand: npm run build
+    publishDir: dist
