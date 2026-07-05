@@ -1,7 +1,7 @@
 import React from 'react';
 import './SearchCard.css';
 
-const SearchCard = ({staffId, setStaffId, onVerify, isLoading, error, isValid}) => {
+const SearchCard = ({staffId, setStaffId, onVerify, isLoading, isValid}) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (staffId.trim() && isValid) {
@@ -24,7 +24,8 @@ const SearchCard = ({staffId, setStaffId, onVerify, isLoading, error, isValid}) 
         <div className="form-section">
             <label>Staff ID:</label>
             <input
-                type="text"
+                type="tel"
+                inputMode="numeric"
                 value={staffId}
                 onChange={handleChange}
                 onKeyDown={handleKeyPress}
